@@ -1,0 +1,9 @@
+﻿venv
+*.AVI
+output_video
+Real-ESRGAN
+frames
+upscaled_frames
+*.aac
+*.mp4
+*.pyc
