@@ -1,0 +1,21 @@
+services:
+  upscaled_frames:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    runtime: nvidia
+    volumes:
+      - ./video:/app/video
+      - ./jpgframes:/app/jpgframes
+      - ./original_frames:/app/original_frames
+      - ./upscaled_frames:/app/upscaled_frames
+      - ./output_video:/app/output_video
+      - ./temp:/app/temp
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=all
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: [gpu]

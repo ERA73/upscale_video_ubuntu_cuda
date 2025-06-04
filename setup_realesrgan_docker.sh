@@ -4,11 +4,6 @@ set -e
 
 echo "🚀 Installing environment for Real-ESRGAN on local GPU (CUDA 11.8)..."
 
-# Create virtual environment
-python3 -m venv venv
-source venv/bin/activate
-echo "✅ Virtual environment activated."
-
 # Upgrade pip and tools
 pip install --upgrade pip setuptools wheel
 

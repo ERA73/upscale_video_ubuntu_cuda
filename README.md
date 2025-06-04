@@ -13,6 +13,11 @@ chmod -R u+rwX .
 sudo ./setup_realesrgan.sh
 ```
 
+If you want to use Docker, install the required dependencies as follows:
+```bash
+sudo ./setup-nvidia-docker.sh
+```
+
 ## Upscale Your Video
 
 Edit the first lines of the `main.py` file. For a simple execution, you only need to modify the following parameters:

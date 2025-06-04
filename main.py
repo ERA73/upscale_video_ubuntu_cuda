@@ -33,8 +33,8 @@ SCALE = 2 # Change to 2, 3, up to 4
 
 
 # === CONFIGURATION ===
-VIDEO_PATH = os.path.join(BASE_DIR, ORIGINAL_VIDEO_NAME)
-OUTPUT_FULL_VIDEO_PATH = os.path.join(BASE_DIR, f'{ORIGINAL_VIDEO_NAME[:-4]}_new.mp4')
+VIDEO_PATH = os.path.join(BASE_DIR, 'video', ORIGINAL_VIDEO_NAME)
+OUTPUT_FULL_VIDEO_PATH = os.path.join(BASE_DIR, 'output_video', f'{ORIGINAL_VIDEO_NAME[:-4]}_new.mp4')
 MODEL_PATH = os.path.join(BASE_DIR, 'Real-ESRGAN', 'weights', f'{SELECTED_MODEL}.pth')
 
 
